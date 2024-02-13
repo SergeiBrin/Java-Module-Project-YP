@@ -1,4 +1,4 @@
 package exception;
 
-public class KopecksFormatException extends RuntimeException {
+public class KopecksFormatException extends Exception {
 }

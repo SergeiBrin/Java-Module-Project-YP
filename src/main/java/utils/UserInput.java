@@ -62,7 +62,7 @@ public class UserInput {
         return scanner.nextLine();
     }
 
-    private static void validateKopecksAmount(String line) {
+    private static void validateKopecksAmount(String line) throws KopecksFormatException {
         String kopecks;
         try {
             kopecks = line.split("\\.")[1];
