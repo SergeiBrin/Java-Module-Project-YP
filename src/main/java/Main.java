@@ -15,9 +15,11 @@ public class Main {
             double cost = UserInput.enterCostOfTheProduct();
             Product product = ProductFactory.createProduct(productName, cost);
             calculator.add(product);
-            System.out.println("Товар успешно добавлен в калькулятор");
 
+            System.out.println("Товар успешно добавлен в калькулятор");
             System.out.println("Хотите ли вы добавить еще один товар?");
+            System.out.println("1. Если да, то введите любой символ.\n" +
+                               "2. Если нет, то введите команду \"завершить\"");
 
             String command = UserInput.askToContinueAddingProducts();
             if (command.equalsIgnoreCase("Завершить")) {
@@ -26,7 +28,7 @@ public class Main {
         }
 
         calculator.printAllAddedProducts();
-        calculator.calculatePriceForOnePerson(numberOfPerson);
+        System.out.println(calculator.calculatePriceForOnePerson(numberOfPerson));
 
 
     }
