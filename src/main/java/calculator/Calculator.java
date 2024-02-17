@@ -40,7 +40,7 @@ public class Calculator {
         String result;
 
         int lastTwoDigit = (int) roundedPrice % 100;
-        if (lastTwoDigit >= 11 && roundedPrice <= 14) {
+        if (lastTwoDigit >= 5 && roundedPrice <= 20) {
             return "рублей";
         }
 
